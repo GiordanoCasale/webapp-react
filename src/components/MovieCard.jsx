@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
         <div className="col-12 col-md-6 col-lg-4">
             <div className="card">
                 <div className="card-image-top">
-                    <img className='img-fluid' src={movie.poster} alt="movie" />
+                    <img className='img-fluid' src={movie.image} alt="movie" />
                 </div>
                 <div className="card-body">
                     <h3 className='text-primary'>{movie.title}</h3>
