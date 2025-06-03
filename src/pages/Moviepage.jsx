@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ReviewCard from '../components/ReviewCard'
+import Stars from '../components/Stars'
 
 
 const Moviepage = () => {
@@ -30,10 +31,11 @@ const Moviepage = () => {
         <>
             <div className='row'>
                 <div className="col-12 col-md-6 col-lg-4">
-                    <img src={movie.poster} className="img-fluid" alt="movie" /></div>
+                    <img src={movie.image} className="img-fluid" alt="movie" /></div>
                 <div className="col-12 col-md-6 col-lg-4">
                     <h1>{movie.title}</h1>
                     <h3>{movie.director}</h3>
+                    <Stars vote={movie.average_vote || 0} />
                     <h3>{movie.year}</h3>
                     <p>{movie.description}</p>
                 </div>
