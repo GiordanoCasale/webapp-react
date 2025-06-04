@@ -27,14 +27,15 @@ const Homepage = () => {
 
     return (
         <>
-            <h1 className='text-primary'>Bool Movies</h1>
-            <h2><i>The Best Homevideo only for you</i></h2>
+            <h1 className="text-primary mb-3">Bool Movies</h1>
+            <h2 className="mb-4 fst-italic">The Best Homevideo only for you</h2>
             <div className="row gy-4">
-                {movies.map((movie) => {
-                    return <MovieCard movie={movie} key={`movie-${movie.id}`} />
-                })};
+                {movies.map((movie) => (
+                    <MovieCard movie={movie} key={`movie-${movie.id}`} />
+                ))}
             </div>
         </>
+
     )
 }
 
