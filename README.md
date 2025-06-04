@@ -31,3 +31,23 @@ Bonus
 Create un array finto di film da ciclare e mostrare nella homepage
 Creare la componente MovieCard in cui passare tramite props il singolo libro
 SUPER BONUS: Nella pagina di dettaglio del film copiate l'array dei film aggiungendo a ciascun oggetto un'array di recensioni. Trovate l'elemento all'interno dell'array da mostrare nella pagina attraverso l'id che avete passato come parametro e mostratelo in pagina assieme alle sue recensioni
+
+
+traccia del 4/06/2025
+Ciao ragazzi, esercizio di oggi:
+repo: webapp-react
+Esercizio
+Miglioriamo l’esperienza dell’utente inserendo
+MILESTONE 1 (BACKEND)
+Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
+Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
+MILESTONE 2 (FRONTEND)
+Creiamo un componente che contenga il form per le recensioni
+Inseriamo questo componente nella pagina di dettaglio del film
+All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre
+Buon Lavoro e buon divertimento!
+
+
+
+
+

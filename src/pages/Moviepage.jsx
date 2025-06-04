@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ReviewCard from '../components/ReviewCard'
 import Stars from '../components/Stars'
+import ReviewForm from '../components/ReviewForm'
 
 
 const Moviepage = () => {
@@ -49,6 +50,7 @@ const Moviepage = () => {
                 {movie.reviews && movie.reviews.map((review, index) => (
                     <ReviewCard review={review} key={`review-${review.id}`} />
                 ))}
+                <ReviewForm movie_id={movie.id} reloadReviews={fetchMovie} />
             </div>
         </>
     )

@@ -5,9 +5,9 @@ const ReviewCard = ({ review }) => {
         <>
             <div className="col-12">
                 <div className="card p-4">
-                    <p>{review.author}</p>
+                    <p>{review.name}</p>
+                    <p>{review.vote}</p>
                     <p>{review.text}</p>
-                    <p>{review.rating}</p>
                 </div>
             </div>
         </>
