@@ -1,21 +1,25 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import MovieCard from '../components/MovieCard'
+import GlobalContext from '../contexts/globalContext'
 
 
 
 const Homepage = () => {
     const [movies, setMovies] = useState([]);
+    const { setIsLoading } = useContext(GlobalContext)
 
 
     const fetchMovies = () => {
+        setIsLoading(true)
         axios.get('http://localhost:3000/movies')
             .then((response) => {
-                console.log(response.data)
-                setMovies(response.data)
-            })
+                console.log(response.data);
+                setMovies(response.data);
+                setIsLoading(false);
+            }, 20000)
             .catch((error) => {
                 console.log(error)
             })
